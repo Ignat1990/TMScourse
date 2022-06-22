@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Homerwork4 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    /*    Scanner sc = new Scanner(System.in);
         int value = sc.nextInt();
         {
 
@@ -15,13 +15,38 @@ public class Homerwork4 {
                 }
             }
         }
+    }*/
+
+        Scanner sc = new Scanner(System.in);
+        String arrayMilan = sc.next();
+
+
+        switch (arrayMilan) {
+            case ("Ibragimovic"):
+                System.out.println("Ginias");
+                break;
+            case ("Theo"):
+                System.out.println("Good Defender");
+                break;
+            case ("Nesta"):
+                System.out.println("Legend Defender");
+                break;
+            case ("Maldini"):
+                System.out.println("Legend");
+                break;
+            case ("Dida"):
+                System.out.println("Good Goalkeeper");
+                break;
+            default:
+                ;
+                break;
+        }
+
+
+
     }
 }
-//Scanner sc = new Scanner(System.in);
-//String Couch = sc.nextLine();{
-//String[] arrayMilan = new String[]{"Ibragimovic", "Theo", "Maldini", "Nesta", "Dida"};
-// String[] Ibragimovic;
-// if (arrayMilan == Ibragimovic) {
-//  System.out.print("Ginias");
-//}else if (arrayMilan == Theo) {
-//System.out.print("Good Defender");
+
+
+
+
