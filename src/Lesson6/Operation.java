@@ -6,11 +6,6 @@ public class Operation {
         creditCard.setSum(result);
     }
 
-
-    public void huiCard(CreditCard creditCard, int vikeNaSushi) {
-        int zpIgnata = creditCard.getSum() - vikeNaSushi;
-        creditCard.setSum(zpIgnata);
-    }
     public void minus(CreditCard creditCard, int minusMoney) {
         int result = creditCard.getSum() - minusMoney;
         creditCard.setSum(result);
