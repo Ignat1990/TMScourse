@@ -1,43 +1,28 @@
 package Lesson11;
 
+import java.util.Scanner;
+
 public class Main {
-     static String str ="2345-tat-5543-hot-2t3h";
-    private static Object ddd;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
 
-    public static void printFirstTwoBlocks(String[] args) {
+        //String passport = "1111-abc-8888-fgh-1f5t";
+        StringUtil.printFirstTwoBlocks(str);
+        StringUtil.changeCharToStar(str);
+        StringUtil.checkAbc(str);
+        StringUtil.starsChange(str);
+        StringUtil.checkThreeLetters(str);
+        StringUtil.checkStart(str);
+        StringUtil.checkEnd(str);
+        StringUtil.stringContainsOnlyLetters(str);
+        StringUtil.stringContainsOnlyLetters1(str);
+        StringUtil.printWithSlash(str);
 
-      /*  System.out.println(str.substring(0, 4));
-        System.out.print(str.substring(9, 13));*/
 
     }
-
-    public static  void starsChange(String[] args) {
-        String oldString = "2345-tat-5543-hot-2t3h";
-        String newString = oldString.replace("2345-tat-5543-hot-2t3h", "2345-***-5543-***-2t3h");
-
-        System.out.println("Old string :" + oldString);
-        System.out.println("New string :" + newString);
-
-        /*public static void printWithSlash(String str)
-        {    
-            String[] words = str.split("-");
-            StringBuilder sb = new StringBuilder("Letters:");
-            sb.append(words[1].toUpperCase()).append("/");  //xxxx-YYY-xxxx-yyy-xyxy
-            sb.append(words[3].toUpperCase()).append("/");  //xxxx-yyy-xxxx-YYY-xyxy
-
-            Character character = words[4].charAt(1);
-            sb.append(character.toString().toUpperCase()).append("/"); //xxxx-yyy-xxxx-yyy-xYxy
-
-            Character character1 = words[4].charAt(3);
-            sb.append(character1.toString().toUpperCase()).append("/"); //xxxx-yyy-xxxx-yyy-xyxY
-
-            System.out.println(sb);
-*/
-
-    }
-
-
 }
+
 
 
 
