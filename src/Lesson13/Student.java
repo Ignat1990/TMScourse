@@ -1,13 +1,15 @@
 package Lesson13;
 
 public class Student {
-    String name;
-    float mark;
+    private String name;
+    private float mark;
 
     public Student(String name, float mark) {
         this.name = name;
         this.mark = mark;
     }
+
+
 
     public String getName() {
         return name;
@@ -33,3 +35,4 @@ public class Student {
                 '}';
     }
 }
+

@@ -1,5 +1,7 @@
 package Lesson13;
 
+
+
 import javax.imageio.ImageReader;
 import java.util.*;
 
@@ -21,18 +23,29 @@ public class Main {
             float markStudent6 = 5;
             float markStudent7 = 2;*/
 
-        Student student1= new Student("Jara", 4.3f);
-        Student student2 =new Student("Pavel", 5f);
-        Student student3= new Student("Grischa", 2f);
-        List<Student> allStudent = new ArrayList<>();
-        allStudent.add(0,student1);
-        allStudent.add(1,student2);
-        allStudent.add(2,student3);
-        allStudent.remove(student3);
+        Student student1 = new Student("Jara", 4.3f);
+        Student student2 = new Student("Pavel", 5f);
+        Student student3 = new Student("Grischa", 2f);
+        List<Student> students = new ArrayList<>();
+        students.add(0, student1);
+        students.add(1, student2);
+        students.add(2, student3);
+        int i;
+        System.out.println(students);
+        for (i = 0; i < students.size(); i++)
+
+        {
+            if (students.get(i).getMark() < 4f) {
+                students.remove(students.get(i));
+                i--;
 
 
-        System.out.println("Good Student :"+allStudent );
-    }}
+            }
+
+        }
+        System.out.println(students);
+    }
+}
 
 
 
