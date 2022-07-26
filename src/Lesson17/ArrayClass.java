@@ -13,7 +13,7 @@ public class ArrayClass {
 
 
         littleInt.add(0, 2);
-        littleInt.add(1, 3);
+        littleInt.add(1, 0);
         littleInt.add(2, 4);
         littleInt.add(3, 5);
         littleInt.add(4, 6);
