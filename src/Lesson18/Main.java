@@ -70,23 +70,23 @@ public class Main
                 findMostValuableProduct(store);
             }
 
-            public static void sum(Store store)
+          /*  public static void sum(Store store)
             {
-                /*Optional<Double> sum = store.getOrders().stream()
-                        .map(order -> order.getEntries().entrySet().stream()
-                                .map(StoreService::getEntryTotalPrice)
-                                .reduce(Double::sum)
-                                .get())
+                Optional<Double> sum = store.getOrders().stream()
+                        .map(order -> {
+                            return order.getEntries().entrySet().stream()
+                                    .map(Store.Servise::getEntryTotalPrice)
+                                    .reduce(Double::sum)
+                                    .get();
+                        })
                         .reduce(Double::sum);
-                System.out.println(sum.get());*/
+                System.out.println(sum.get());
             }
-
+*/
             private static double getEntryTotalPrice(Map.Entry<Product, Integer> entry)
             {
                 return entry.getKey().getPrice() * entry.getValue();
             }
-
-
 
             public static void showOrders(Store store, Date from, Date to) {
                 List<Order> product = store.getOrders().stream()

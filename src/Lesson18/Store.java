@@ -2,37 +2,34 @@ package Lesson18;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
-public class Store
-{
+public class Store {
 
     private List<Order> orders;
 
-    public Store()
-    {
+    public Store() {
         orders = new ArrayList<>();
     }
 
-    public Store(List<Order> orders)
-    {
+    public Store(List<Order> orders) {
         this.orders = orders;
     }
 
-    public List<Order> getOrders()
-    {
+    public List<Order> getOrders() {
         return orders;
     }
 
-    public void setOrders(List<Order> orders)
-    {
+    public void setOrders(List<Order> orders) {
         this.orders = orders;
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "Store{" +
                 "orders=" + orders +
                 '}';
     }
+
+
 }
