@@ -42,8 +42,6 @@ public class Main {
 
                         @Override
                         public void Vector(int initialCapacity, int capacityIncrement) {
-*/
-/*
 
                         }
                 };
@@ -67,6 +65,11 @@ public class Main {
                         public boolean getAngle(geomVector a, geomVector b) {
                                 return false;
                         }
+
+                    @Override
+                    public void Vector(int initialCapacity, int capacityIncrement) {
+
+                    }
                 };
                 a.setVector(x1,y1,x2,y2);
                 b.setVector(x3,y3,x4,y4);
@@ -79,5 +82,5 @@ public class Main {
 
 
 
-
 */
+
